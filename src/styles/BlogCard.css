@@ -1,0 +1,7 @@
+.bg-photo {
+  background-color: rgba(57, 62, 93, 0.7);
+  padding: 0;
+  overflow: hidden;
+  max-width: 350px;
+  margin: 5px;
+}

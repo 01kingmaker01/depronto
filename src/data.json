@@ -1,0 +1,72 @@
+[
+  {
+    "id": 1,
+    "full_name": "Pepe Humby",
+    "email": "phumby0@blogspot.com",
+    "gender": "Male",
+    "start_date": "06-03-2022"
+  },
+  {
+    "id": 2,
+    "full_name": "Ignatius Collcott",
+    "email": "icollcott1@wikia.com",
+    "gender": "Male",
+    "start_date": "01-02-2022"
+  },
+  {
+    "id": 3,
+    "full_name": "Aharon Golde",
+    "email": "agolde2@pcworld.com",
+    "gender": "Male",
+    "start_date": "17-09-2021"
+  },
+  {
+    "id": 4,
+    "full_name": "Timotheus Kalinsky",
+    "email": "tkalinsky3@usgs.gov",
+    "gender": "Male",
+    "start_date": "11-12-2021"
+  },
+  {
+    "id": 5,
+    "full_name": "Rufus Donnersberg",
+    "email": "rdonnersberg4@merriam-webster.com",
+    "gender": "Male",
+    "start_date": "11-09-2021"
+  },
+  {
+    "id": 6,
+    "full_name": "Woodman Girardini",
+    "email": "wgirardini5@tamu.edu",
+    "gender": "Male",
+    "start_date": "21-05-2022"
+  },
+  {
+    "id": 7,
+    "full_name": "Eldredge Childs",
+    "email": "echilds6@wisc.edu",
+    "gender": "Non-binary",
+    "start_date": "22-11-2021"
+  },
+  {
+    "id": 8,
+    "full_name": "Corene Tuddall",
+    "email": "ctuddall7@networkadvertising.org",
+    "gender": "Female",
+    "start_date": "31-10-2021"
+  },
+  {
+    "id": 9,
+    "full_name": "Archy Goldwater",
+    "email": "agoldwater8@dion.ne.jp",
+    "gender": "Male",
+    "start_date": "22-03-2022"
+  },
+  {
+    "id": 10,
+    "full_name": "Dido Kilmaster",
+    "email": "dkilmaster9@oaic.gov.au",
+    "gender": "Female",
+    "start_date": "20-03-2022"
+  }
+]
