@@ -3,8 +3,8 @@ import Carousel from "react-bootstrap/Carousel";
 
 export default function CaruselCom() {
   return (
-    <div style={{ display: "block", width: "100%" }}>
-      <div className="d-flex ">
+    <div id="about" style={{ display: "block", width: "100%" }}>
+      <div className="d-flex flex-column flex-lg-row    align-items-center gap-5 my-5 mt-lg-0 gap-lg-0 ">
         <Carousel style={{ display: "block", width: "50%" }}>
           <Carousel.Item interval={1500}>
             <img

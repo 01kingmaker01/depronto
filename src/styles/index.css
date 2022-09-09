@@ -14,3 +14,14 @@ th.down {
   background-repeat: no-repeat;
   background-position: center right;
 }
+@media only screen and (max-width: 800px) {
+  .tableCon {
+    overflow: hidden;
+    position: relative;
+    width: 100%;
+  }
+  .table {
+    overflow-y: scroll;
+    display: block;
+  }
+}

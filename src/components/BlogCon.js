@@ -1,5 +1,4 @@
 import React, { useEffect, useState } from "react";
-import { Col, Row } from "react-bootstrap";
 import BlogCard from "./BlogCard";
 
 const BlogCon = () => {
@@ -7,7 +6,7 @@ const BlogCon = () => {
   useEffect(() => {
     const fetchData = async () => {
       const data = await fetch(
-        " http://jsonplaceholder.typicode.com/posts/?_limit=3"
+        " http://jsonplaceholder.typicode.com/posts/?_limit=10"
       ).then((response) => response.json());
 
       console.log({ data });
@@ -16,13 +15,24 @@ const BlogCon = () => {
     fetchData();
   }, []);
   return (
-    <Row>
+    <div
+      id="blogs"
+      style={{
+        display: "flex",
+        flexWrap: "wrap",
+        justifyContent: "center",
+        gap: "2rem",
+      }}>
       {blogs?.map((data) => (
-        <Col sm="2" md="4">
-          <BlogCard key={data.id} data={data} />
-        </Col>
+        <BlogCard
+          key={data.id}
+          {...{
+            data,
+            img: "https://source.unsplash.com/random/200x200?sig=incrementingIdentifier",
+          }}
+        />
       ))}
-    </Row>
+    </div>
   );
 };
 

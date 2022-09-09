@@ -1,8 +1,8 @@
 import React, { useState } from "react";
-import { Button, Card, Modal } from "react-bootstrap";
+import { Card, Modal } from "react-bootstrap";
 import "../styles/BlogCard.css";
 
-const BlogCard = ({ data: { id, title, body, img } }) => {
+const BlogCard = ({ img, data: { id, title, body } }) => {
   const [fullscreen, setFullscreen] = useState(true);
   const [show, setShow] = useState(false);
 
@@ -12,20 +12,25 @@ const BlogCard = ({ data: { id, title, body, img } }) => {
   }
   return (
     <>
-      <Card className="bg-photo" style={{ width: "18rem" }} key={id}>
-        <Card.Img variant="top" src={img} />
-        <Card.Body>
-          <Card.Title>{title}</Card.Title>
-          <Button className="me-2 mb-2" onClick={() => handleShow(true)}>
+      <Card className="bg-photo " style={{ width: "18rem" }} key={id}>
+        {/* <Card.Img variant="top" src={img} /> */}
+        <Card.Title id="title">{title}</Card.Title>
+        <div className="ver_mas text-center">
+          <span
+            id="click"
+            style={{ cursor: "pointer" }}
+            className="lnr lnr-eye"
+            onClick={() => handleShow(true)}>
             Open ↗️
-          </Button>
-        </Card.Body>
+          </span>
+        </div>
+        <img src={img} alt="" />
       </Card>
       <Modal show={show} fullscreen={fullscreen} onHide={() => setShow(false)}>
         <Modal.Header closeButton>
-          <Modal.Title>Modal</Modal.Title>
+          <Modal.Title>{title}</Modal.Title>
         </Modal.Header>
-        <Modal.Body>Modal body content</Modal.Body>
+        <Modal.Body>{body}</Modal.Body>
       </Modal>
     </>
   );

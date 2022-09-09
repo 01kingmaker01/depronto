@@ -5,10 +5,12 @@ import data from "./data.json";
 import { columns } from "./Columns";
 import Table from "./components/Table/Table";
 import FormCon from "./components/Form";
+import Navigation from "./components/Navbar";
 
 function App() {
   return (
-    <Container>
+    <Container className="mt-5 d-flex flex-column gap-5">
+      <Navigation />
       <CarouselCom />
       <Table
         data={data}
